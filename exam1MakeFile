@@ -1,0 +1,9 @@
+exam1tester:	exam1tester.o exam1list.o
+	gcc exam1tester.o exam1list.o -o exam1tester
+
+exam1tester.o: exam1tester.c
+	gcc -c exam1tester.c
+	
+exam1list.o: exam1list.c exam1list.h
+	gcc -c exam1list.c
+
